@@ -1,0 +1,78 @@
+@import "general";
+
+#contact{
+  text-align: center;
+  background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat padding-box;
+  padding-top:60px;
+  padding-bottom:70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+
+
+  
+  & .c-title{
+    color: white;
+    
+    & h2{
+      font-size:32px;
+      padding-bottom: 7px;
+    }
+    
+    & p{
+      font-size:16px;
+      padding-bottom: 35px;
+      
+      &.c-second{
+        padding-bottom: 50px;
+      }
+    }
+  }
+
+  form{
+    background-color: white;
+    padding: 35px 63px;
+    box-sizing: border-box;
+    max-width: 908px;
+    width: 100%;
+    margin: 0 auto;
+    
+    .c-contents{
+      padding-bottom: 25px;
+      text-align: left;
+      width:100%;
+
+     label{
+       font-size: 16px;
+       padding-bottom:39px;
+       display: block;
+       
+
+       span{
+       font-size: 14px;
+       color:white;
+       background-color: #0C449B;
+       padding:4px 16px;
+       border-radius: 8px;
+       margin-left: 23px;
+       }
+
+      }
+      input{
+        width: 100%;
+        max-width: 500px;
+      }
+     
+    }
+    // .checkbox{
+    //   vertical-align: top;
+    // }
+    
+    
+    button{
+      font-size: 14px;
+      margin-top:30px;
+    }
+  }
+  
+}

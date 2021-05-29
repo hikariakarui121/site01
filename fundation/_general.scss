@@ -1,0 +1,30 @@
+body{
+font-family: 'Noto Sans JP', sans-serif;;
+}
+
+.title{
+
+  &>p{
+    color:#3BA6C9;
+    padding-top: 10px;
+    font-weight: bold;
+  }
+}
+
+@mixin OverTab {
+  @media screen and(min-width:950px){
+    @content; 
+  }
+}
+
+@mixin midTab {
+  @media screen and(min-width:800px){
+    @content; 
+  }
+}
+
+@mixin smallTab {
+  @media screen and(min-width:670px){
+    @content; 
+  }
+}

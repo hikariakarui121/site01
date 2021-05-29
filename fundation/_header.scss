@@ -1,0 +1,169 @@
+@import "general";
+
+header{
+  background-color: white;
+  // height: 94px;
+  box-shadow: 0px 3px 6px #00000029;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  .inner{
+    max-width: 1022px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    padding:28px 30px;
+    box-sizing: border-box;
+    
+
+
+    .logo{
+      display: flex;
+      align-items: center;
+    
+      h1{
+        font-size: 24px;
+        padding-left: 15px;
+      }
+    }
+    
+    .menu{
+      display: none;
+      position: fixed;
+      top:0;
+      right:0;
+      width: 40%;
+      background-color: white;
+
+      &.-active{
+        display: block;
+      }
+
+
+      @include OverTab{
+        display: block;
+        position: static;
+        width: initial;
+        background-color: transparent;
+      }
+
+        li{    
+          padding: 45px 30px;
+          border-bottom: 1px solid gray;
+          border-left: 1px solid gray;
+
+          @include OverTab{
+            display: inline-block;
+            padding: 0;
+            border: none;
+          }
+
+          &:nth-child(n+1){
+            margin: 0;
+
+            @include OverTab{
+            margin-left: 45px;
+            }
+          }
+
+      
+          a{
+            font-size: 16px;
+            display: block;
+            text-decoration: none;
+            color:black;
+            font-weight: bold;
+
+            @include OverTab{
+            }
+          }
+        }
+      
+    }
+      
+    
+
+    .inquiry-btn{
+      display: none;
+      
+      @include OverTab{
+        display: block;
+
+        &>a{
+          border-radius:7px;
+          padding:7px 36px;
+          font-size: 14px;
+          color:white;
+          background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
+          text-decoration: none;
+        }
+      }
+    }
+
+    
+   
+    button{
+      width:52px;
+      height:30px;
+      position: relative;
+
+      // 存在を消す
+      appearance: none;
+      outline: none;
+      font:inherit;
+      border: none;
+
+      @include OverTab{
+        display: none;
+      }
+
+      &.-active{
+
+        span{
+          top:0;
+          bottom: 0;
+          margin: auto;
+          transition: 0.3s ease;
+
+          &:first-child{
+           transform: rotate(45deg);
+          }
+          &:nth-child(2){
+            transform: rotate(45deg);
+          }
+          &:last-child{
+            transform: rotate(-45deg);
+          }
+        }
+
+      }
+
+      span{
+        display: block;
+        background-color: black;
+        height: 3px;
+        width: 100%;
+        position:absolute;
+    
+
+        &:first-child{
+          top:0;
+        }
+        &:nth-child(2){
+          top:0;
+          bottom: 0;
+          margin: auto;
+        }
+        &:last-child{
+          bottom:0;
+        }
+
+      }
+    }
+  }
+}

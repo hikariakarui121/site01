@@ -1,0 +1,39 @@
+footer{
+  text-align: center;
+  background-color:#F8F8F8;
+
+  &>h2{
+    font-size:24px ;
+    padding-top: 45px;
+    padding-bottom: 20px;
+  }
+
+  nav{
+    padding-bottom: 50px;
+
+    ul{
+
+
+      li{
+        display: inline-block;
+        list-style: none;
+      
+        &.list-second{
+          padding-left: 30px;
+        }
+
+        a{
+          display: block;
+          text-decoration: none;
+          color: black;
+
+        }
+      }
+    }
+  }
+
+  &>p{
+    font-size: 14px;
+    padding-bottom: 50px;
+  }
+}
