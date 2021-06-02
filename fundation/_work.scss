@@ -3,6 +3,10 @@
   padding-left: 30px;
   padding-right: 30px;
 
+  @include smallTab{
+    padding: 0px;
+  }
+
   .w-title{
     text-align: center;
     padding-bottom: 68px;
@@ -12,10 +16,13 @@
     h2{
       font-size: 32px;
       padding-bottom: 11px;
+      line-height: 46px;
     }
     
     p{
+      font-weight: bold;
       font-size:16px;
+      line-height: 24px;
       color:#3BA6C9;
     }
   }
