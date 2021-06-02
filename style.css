@@ -566,6 +566,11 @@ body {
   }
 }
 
+#feature .f-inner .contents .sub-title .contents-item .contents-image img {
+  max-width: 400px;
+  height: auto;
+}
+
 #feature .f-inner .contents .sub-title .contents-item .discription {
   text-align: center;
   padding-top: 50px;
