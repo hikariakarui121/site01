@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name=”robots” content=”noindex”>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ 
  
   <title>ユアコーディング</title>
 </head>
@@ -40,9 +41,7 @@
       </nav>
   
       <div class="inquiry-btn">
-        <a href="#contact"> 
-        お問い合わせ
-        </a>
+        <a href="#contact"> お問い合わせ</a>
       </div>
 
       <button class="nav-btn"><span></span><span></span><span></span></button>
@@ -59,7 +58,7 @@
         <div class="top-text">
           <h2>コーディングの手間を<br>最小に、デザインに注力<br>する助けに</h2>
           <p>ユアコーディングはコーディング<br>に特化したフリーランス<br>デザインに注力されたい方の<br>助けになります</p>   
-          <div class="top-btn"><a href="#">お問い合わせ</a></div>
+          <div class="top-btn"><a href="#contact">お問い合わせ</a></div>
         </div>
         <div class="top-image"><img src="./image/manager.png" alt=""></div>
         <div class="bgc-img"><img src="./image/楕円形 1.png" alt=""></div>
@@ -260,7 +259,6 @@
       <!-- ここからスライダー -->
       <div class="swiper-container">
         <div class="swiper-wrapper">
-
             <div class="swiper-slide">
                 <div class="w-text">
                     <div class="ww-title">
@@ -369,7 +367,7 @@
 
         <div class="c-contents">
           <label>お問合せ内容<span>必須</span></label>
-          <textarea type="text" style="width:100%;" name="content" rows="5" placeholder="お問合せ内容"  required></textarea>
+          <textarea type="text" name="content" rows="5" placeholder="お問合せ内容"  required></textarea>
         </div>
 
         <div class="checkbox">
@@ -406,6 +404,7 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./aos/aos.js"></script>
  <script src="./js/main.js"></script>
 </body>

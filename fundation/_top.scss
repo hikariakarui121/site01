@@ -4,19 +4,22 @@
 #top{
   padding-top: 150px;
   padding-bottom:113px;
+  color:$Bcolor;
 
   .t-inner{
-
-    text-align: center;
     padding-right: 30px;
     padding-left: 30px;
     box-sizing: border-box;
-
+    text-align: center;
+    
     @include smallTab{
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-
+      text-align: left;
+      max-width: 1022px;
+      width: 100%;;
+      margin: 0 auto;
     }
 
     // background: url("../image/楕円形\ 1.png");
@@ -26,12 +29,16 @@
       h2{
         font-size: 32px;
         padding-bottom: 45px;
+        line-height: 46px;
+        // text-align: left;
 
         
       }
       p{
         font-size:16px;
         padding-bottom:45px;
+        line-height: 24px;
+        
       }
       
       .top-btn{
@@ -41,8 +48,9 @@
         a{
           display: block;
           border-radius:7px;
-          padding:8px 36px;
+          padding:9px 36px;
           font-size: 14px;
+          line-height: 20px;
           color:white;
           background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
           text-decoration: none;

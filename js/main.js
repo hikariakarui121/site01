@@ -10,10 +10,11 @@ $(function(){
 // ==================================================
 
 // ふたつ目のスライドショー
-var slider = new Swiper('.swiper-container', {
-  centeredSlides:true,
+const swiper = new Swiper('.swiper-container', {
   spaceBetween: 50,
   loop:true,
+  centeredSlides:true,
+  
   
   autoplay: {
     delay: 5000,
@@ -23,16 +24,8 @@ var slider = new Swiper('.swiper-container', {
   breakpoints: {
     // 768px以上の場合
     768: {
-      slidesPerView: 1.5,
-    },
-    // 980px以上の場合
-    980: {
-      slidesPerView: 2.5,
-    },
-    // 1200px以上の場合
-    1200: {
       slidesPerView: 3.5,
-    }
+    },
   }
 });
 

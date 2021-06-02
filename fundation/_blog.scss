@@ -21,11 +21,11 @@
   }
 
   .b-contents{
+    padding-bottom: 90px;
     
     @include midTab{
       display: flex;
       justify-content: center;
-      padding-bottom: 90px;
       align-items: flex-start;
       max-width: 1220px;
       width: 100%;

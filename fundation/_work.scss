@@ -1,5 +1,7 @@
 #work{
   overflow: hidden;
+  padding-left: 30px;
+  padding-right: 30px;
 
   .w-title{
     text-align: center;
@@ -21,16 +23,18 @@
 
 .swiper-container {
   overflow: hidden;
+  width: 100%;
 
   .swiper-wrapper{
     padding-bottom: 90px;
-    
+
     
     .swiper-slide{
       display: flex;
       flex-direction: column-reverse;
-      max-width: 322px;
       overflow: hidden;
+     
+     
       
       .w-text{
         width: 100%;
@@ -40,6 +44,7 @@
         border-bottom-right-radius: 5px;
         padding:19px;
         overflow: hidden;
+        font-weight: bold;
 
         .ww-title{
           font-size: 16px;
@@ -48,6 +53,7 @@
         }
         .w-discription{
           font-size:14px;
+          line-height: 20px;
           padding-bottom: 21px;
         }
       }
