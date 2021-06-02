@@ -42,21 +42,24 @@
             align-items: center;
             padding-bottom:85px;
         
-          
-          &.second{
-            
-            flex-direction: row-reverse;
-            padding-bottom:136px;
-          }
-          
-          &.third{
-            padding-bottom:154px;
+              &.second{
+                flex-direction: row-reverse;
+                padding-bottom:136px;
+              }
+              
+              &.third{
+                padding-bottom:154px;
 
+              }
+          }
+           .contents-image{
+
+            img{
+              max-width: 400px;
+              height: auto;
             }
-          }
-            // .contents-image{
 
-            // }
+           }
 
             .discription{
               text-align: center;
