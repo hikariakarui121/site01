@@ -145,6 +145,7 @@ body {
 
 #contact .c-title h2 {
   font-size: 32px;
+  line-height: 46px;
   padding-bottom: 7px;
 }
 
@@ -152,6 +153,7 @@ body {
   font-size: 16px;
   padding-bottom: 35px;
   line-height: 24px;
+  font-weight: bold;
 }
 
 #contact .c-title p.c-second {
@@ -609,10 +611,12 @@ body {
 
 #price .p-inner .title h2 {
   font-size: 32px;
+  line-height: 46px;
 }
 
 #price .p-inner .title p {
   font-size: 16px;
+  line-height: 24px;
 }
 
 #price .p-inner table {
@@ -744,6 +748,12 @@ body {
   padding-right: 30px;
 }
 
+@media screen and (min-width: 670px) {
+  #work {
+    padding: 0px;
+  }
+}
+
 #work .w-title {
   text-align: center;
   padding-bottom: 68px;
@@ -753,10 +763,13 @@ body {
 #work .w-title h2 {
   font-size: 32px;
   padding-bottom: 11px;
+  line-height: 46px;
 }
 
 #work .w-title p {
+  font-weight: bold;
   font-size: 16px;
+  line-height: 24px;
   color: #3BA6C9;
 }
 
